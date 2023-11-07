@@ -1,8 +1,6 @@
 package simulation;
 
-import java.util.Map;
-import java.util.Random;
-import java.util.TreeMap;
+import java.util.*;
 
 public class EntityMap {
     private Map<Point, Entity> map;
@@ -11,6 +9,7 @@ public class EntityMap {
     private final int height = 20;
 
     public Point getRandomPoint() {
+        if (map.size() == width * height) return null;
         Random random = new Random();
         while (true) {
             Point point = new Point(random.nextInt(width), random.nextInt(height));
@@ -61,6 +60,19 @@ public class EntityMap {
 
     public int getSize() {
         return width * height;
+    }
+
+    public List<Point> getNeighboursOfPoint(Point point) {
+        List<Point> neighbours = new ArrayList<>();
+        int x = point.getX();
+        int y = point.getY();
+
+        if (x + 1 < width) neighbours.add(new Point(x + 1, y));
+        if (x - 1 > width) neighbours.add(new Point(x - 1, y));
+        if (y + 1 < height) neighbours.add(new Point(x, y + 1));
+        if (y - 1 > height) neighbours.add(new Point(x, y - 1));
+
+        return neighbours;
     }
 
 

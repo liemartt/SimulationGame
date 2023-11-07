@@ -5,14 +5,11 @@ import simulation.Point;
 import simulation.Rock;
 import simulation.Tree;
 
-public class TreeSpawnAction extends Action {
+public class TreeSpawnAction extends SpawnEntityAction<Tree> {
     private final double spawnRate = 0.2;
 
     @Override
-    public void doAction(EntityMap map) {
-        if ((double) map.getTreeCounter() / map.getSize() <= spawnRate) return;
-        Point place = map.getRandomPoint();
-        map.getMap().put(place, new Tree());
-        map.setTreeCounter(map.getTreeCounter() + 1);
+    Tree createEntity() {
+        return new Tree();
     }
 }

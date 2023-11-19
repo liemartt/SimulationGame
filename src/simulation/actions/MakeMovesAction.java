@@ -13,7 +13,7 @@ public class MakeMovesAction extends Action{
         List<Entity> entities = map.getMap().values().stream().toList();
         for (Entity entity:entities){
             if(entity instanceof Creature){
-                ((Creature) entity).makeMove();
+                ((Creature) entity).makeMove(map);
             }
         }
     }

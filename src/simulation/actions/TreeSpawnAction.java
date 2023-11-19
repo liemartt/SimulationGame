@@ -9,7 +9,7 @@ public class TreeSpawnAction extends SpawnEntityAction<Tree> {
     private final double spawnRate = 0.2;
 
     @Override
-    Tree createEntity() {
-        return new Tree();
+    Tree createEntity(EntityMap map) {
+        return new Tree(map);
     }
 }

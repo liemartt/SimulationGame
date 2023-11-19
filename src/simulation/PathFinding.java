@@ -9,11 +9,12 @@ public class PathFinding {
         List<Point> tempPath;
         List<Point> visitedPoints = new ArrayList<>();
         Queue<List<Point>> queue = new LinkedList<>();
-        queue.add(List.of(startPoint));
+        queue.add(new ArrayList<>(Collections.singletonList(startPoint)));
 
         while (!queue.isEmpty()) {
             path = queue.poll();
             Point lastPoint = path.get(path.size() - 1);
+            if(lastPoint==null) continue;
             for (Point point : map.getNeighboursOfPoint(lastPoint)) {
                 Entity entity = map.getMap().get(point);
                 if (entity == null) {
@@ -29,6 +30,7 @@ public class PathFinding {
                 }
             }
         }
+
         return null;
     }
 

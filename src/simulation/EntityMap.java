@@ -3,10 +3,11 @@ package simulation;
 import java.util.*;
 
 public class EntityMap {
+    //TODO private map without getMap
     private Map<Point, Entity> map;
     private int grassCounter = 0, rockCounter = 0, treeCounter = 0, herbivoreCounter = 0;
-    private final int width = 20;
-    private final int height = 20;
+    private final int width = 10;
+    private final int height = 10;
 
     public Point getRandomPoint() {
         if (map.size() == width * height) return null;
@@ -18,11 +19,26 @@ public class EntityMap {
     }
 
     public EntityMap() {
-        map = new TreeMap<>();
+        map = new HashMap<>();
     }
 
     public Map<Point, Entity> getMap() {
         return map;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+    public Point getPointOfEntity(Entity entity){
+        for (Map.Entry<Point, Entity> entry : map.entrySet()) {
+            if (entry.getValue().equals(entity))
+                return entry.getKey();
+        }
+        return null;
     }
 
     public void setGrassCounter(int grassCounter) {

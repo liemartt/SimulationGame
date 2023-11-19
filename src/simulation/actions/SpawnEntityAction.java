@@ -5,7 +5,7 @@ import simulation.EntityMap;
 import simulation.Point;
 
 public abstract class SpawnEntityAction<T extends Entity> extends Action {
-    double spawnRate;
+    double spawnRate = 0.1;
 
     @Override
     public void doAction(EntityMap map) {
@@ -17,10 +17,10 @@ public abstract class SpawnEntityAction<T extends Entity> extends Action {
                 System.out.println("No empty points");//TODO Exception
                 return;
             }
-            map.getMap().put(point, createEntity());
+            map.getMap().put(point, createEntity(map));
             rate += rateDelta;
         }
     }
 
-    abstract T createEntity();
+    abstract T createEntity(EntityMap map);
 }

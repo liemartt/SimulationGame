@@ -1,232 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Simulation:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b6ab7d9-1b04-4922-a236-2023f7534500" name="Changes" comment="fix creature class and bug fix">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Simulation_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simulation/actions/MissingGrassSpawnAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/EntityMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/EntityMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Grass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Herbivore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/PathFinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/PathFinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Predator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Rock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/actions/PredatorSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/PredatorSpawnAction.java" afterDir="false" />
-    </list>
+    <list default="true" id="2b6ab7d9-1b04-4922-a236-2023f7534500" name="Changes" comment="first working version with emoji output in console" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "liemartt"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f6939db-1bc6-4944-a13f-08dca88043f9" />
+        <option name="url" value="https://github.com/liemartt/simulation_game.git" />
+      </UrlAndAccount>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2WwnkSJjUeMEnlj8zDC4k3biQn4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Simulation.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaLearning/Simulation/out",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaLearning\Simulation\out" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simulation.Main" />
-      <module name="Simulation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PathFinding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simulation.PathFinding" />
-      <module name="Simulation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Renderer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simulation.Renderer" />
-      <module name="Simulation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Simulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simulation.Simulation" />
-      <module name="Simulation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Simulation" />
-        <item itemvalue="Application.Renderer" />
-        <item itemvalue="Application.PathFinding" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-18.0.2-azul-18.0.2.1-3183f394aec4-4a0df65b" />
-        <option value="jdk-20.0.2-azul-20.0.2-3183f394aec4-4edb7f01" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="2b6ab7d9-1b04-4922-a236-2023f7534500" name="Changes" comment="" />
-      <created>1697652653830</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1697652653830</updated>
-      <workItem from="1697652654869" duration="7870000" />
-      <workItem from="1697738693507" duration="3323000" />
-      <workItem from="1698511006638" duration="2469000" />
-      <workItem from="1698745679305" duration="10000" />
-      <workItem from="1698862023679" duration="4010000" />
-      <workItem from="1699211522275" duration="29676000" />
-      <workItem from="1699950449443" duration="8000" />
-      <workItem from="1700409934751" duration="520000" />
-      <workItem from="1701012070775" duration="17000" />
-      <workItem from="1701013708123" duration="242000" />
-      <workItem from="1701013968800" duration="69000" />
-      <workItem from="1701014151870" duration="114000" />
-      <workItem from="1701014464308" duration="61000" />
-      <workItem from="1701014537073" duration="113000" />
-      <workItem from="1701014979203" duration="24000" />
-      <workItem from="1701430744437" duration="3350000" />
-      <workItem from="1701434976717" duration="12355000" />
-      <workItem from="1701552706870" duration="680000" />
-    </task>
-    <task id="LOCAL-00001" summary="added spawn classes">
-      <option name="closed" value="true" />
-      <created>1698512610536</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698512610536</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added PathFinding class and implemented BFS">
-      <option name="closed" value="true" />
-      <created>1699350018935</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699350018935</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix creature class and bug fix">
-      <option name="closed" value="true" />
-      <created>1700410005957</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1700410005957</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added spawn classes" />
-    <MESSAGE value="added PathFinding class and implemented BFS" />
-    <MESSAGE value="fix creature class and bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix creature class and bug fix" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

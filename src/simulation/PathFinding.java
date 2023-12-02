@@ -24,13 +24,11 @@ public class PathFinding {
                         tempPath.add(point);
                         queue.add(tempPath);
                     }
-                } else if (target == entity.getClass()) {
-                    path.add(point);
+                } else if (target.equals( entity.getClass())) {
                     return path;
                 }
             }
         }
-
         return null;
     }
 

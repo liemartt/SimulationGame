@@ -16,7 +16,7 @@ public class Simulation {
         map = new EntityMap();
         renderer = new Renderer(this);
         initActions = List.of(new HerbivoreSpawnAction(), new PredatorSpawnAction(), new GrassSpawnAction(), new RockSpawnAction(), new TreeSpawnAction());
-        turnActions = List.of(new MakeMovesAction());
+        turnActions = List.of(new MakeMovesAction(), new MissingGrassSpawnAction());
         counter = 0;
     }
 

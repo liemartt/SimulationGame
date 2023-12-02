@@ -22,7 +22,6 @@ public class Herbivore extends Creature {
         for(Point point:map.getNeighboursOfPoint(map.getPointOfEntity(this))){
             if(map.getMap().get(point) instanceof Grass){
                 hp++;
-                System.out.println("Herbivore "+map.getPointOfEntity(this)+" ate grass "+point);
                 map.getMap().remove(map.getPointOfEntity(this));
                 map.getMap().put(point, this);
 
@@ -34,5 +33,10 @@ public class Herbivore extends Creature {
 
     public void setHp(int hp) {
         this.hp = hp;
+    }
+
+    @Override
+    public String toString() {
+        return "\uD83D\uDC07";//🐇
     }
 }

@@ -5,7 +5,7 @@ import simulation.EntityMap;
 import simulation.Point;
 
 public abstract class SpawnEntityAction<T extends Entity> extends Action {
-    double spawnRate = 0.1;
+    double spawnRate;
 
     @Override
     public void doAction(EntityMap map) {

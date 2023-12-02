@@ -5,8 +5,7 @@ import java.util.*;
 public class EntityMap {
     //TODO private map without getMap
     private Map<Point, Entity> map;
-    private int grassCounter = 0, rockCounter = 0, treeCounter = 0, herbivoreCounter = 0;
-    private final int width = 10;
+    private final int width = 20;
     private final int height = 10;
 
     public Point getRandomPoint() {
@@ -41,53 +40,29 @@ public class EntityMap {
         return null;
     }
 
-    public void setGrassCounter(int grassCounter) {
-        this.grassCounter = grassCounter;
+    public long countEntities(Class<? extends Entity> entity){
+        return map.values().stream().filter(x->x.getClass()==entity).count();
     }
-
-    public void setRockCounter(int rockCounter) {
-        this.rockCounter = rockCounter;
-    }
-
-    public void setTreeCounter(int treeCounter) {
-        this.treeCounter = treeCounter;
-    }
-
-    public void setHerbivoreCounter(int herbivoreCounter) {
-        this.herbivoreCounter = herbivoreCounter;
-    }
-
-    public int getGrassCounter() {
-        return grassCounter;
-    }
-
-    public int getRockCounter() {
-        return rockCounter;
-    }
-
-    public int getTreeCounter() {
-        return treeCounter;
-    }
-
-    public int getHerbivoreCounter() {
-        return herbivoreCounter;
-    }
-
 
     public int getSize() {
         return width * height;
     }
 
-    public List<Point> getNeighboursOfPoint(Point point) {
-        List<Point> neighbours = new ArrayList<>();
-        int x = point.getX();
-        int y = point.getY();
+    public Set<Point> getNeighboursOfPoint(Point point) {
+        Set<Point> neighbours = new HashSet<>();
+        if (point == null)
+            return neighbours;
 
-        if (x + 1 < width) neighbours.add(new Point(x + 1, y));
-        if (x - 1 > width) neighbours.add(new Point(x - 1, y));
-        if (y + 1 < height) neighbours.add(new Point(x, y + 1));
-        if (y - 1 > height) neighbours.add(new Point(x, y - 1));
+        for (int x = -1; x <= 1; x++) {
+            for (int y = -1; y <= 1; y++) {
+                if (x == 0 && y == 0 || x * y != 0) continue;
 
+                int newX = point.getX() + x;
+                int newY = point.getY() + y;
+                if (newX >= 0 && newX < width && newY >= 0 && newY < height)
+                    neighbours.add(new Point(newX, newY));
+            }
+        }
         return neighbours;
     }
 

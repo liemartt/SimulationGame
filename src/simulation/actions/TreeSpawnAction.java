@@ -6,7 +6,9 @@ import simulation.Rock;
 import simulation.Tree;
 
 public class TreeSpawnAction extends SpawnEntityAction<Tree> {
-    private final double spawnRate = 0.2;
+    public TreeSpawnAction() {
+        this.spawnRate = 0.1;
+    }
 
     @Override
     Tree createEntity(EntityMap map) {

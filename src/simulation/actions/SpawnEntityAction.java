@@ -17,7 +17,7 @@ public abstract class SpawnEntityAction<T extends Entity> extends Action {
                 System.out.println("No empty points");//TODO Exception
                 return;
             }
-            map.getMap().put(point, createEntity(map));
+            map.add(point, createEntity(map));
             rate += rateDelta;
         }
     }

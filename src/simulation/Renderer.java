@@ -18,7 +18,7 @@ public class Renderer {
         for (int i = 0; i < map.getHeight(); i++) {
             for (int j = 0; j < map.getWidth(); j++) {
                 Point p = new Point(j, i);
-                Entity entity = map.getMap().get(p);
+                Entity entity = map.get(p);
                 if (entity == null) System.out.print("\uD83D\uDFEB");//🟫
                 else System.out.print(entity.toString());
             }

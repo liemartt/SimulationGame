@@ -16,7 +16,7 @@ public class PathFinding {
             Point lastPoint = path.get(path.size() - 1);
             if(lastPoint==null) continue;
             for (Point point : map.getNeighboursOfPoint(lastPoint)) {
-                Entity entity = map.getMap().get(point);
+                Entity entity = map.get(point);
                 if (entity == null) {
                     if (!visitedPoints.contains(point)) {
                         visitedPoints.add(point);

@@ -21,10 +21,6 @@ public class EntityMap {
         map = new HashMap<>();
     }
 
-    public Map<Point, Entity> getMap() {
-        return map;
-    }
-
     public int getWidth() {
         return width;
     }
@@ -32,7 +28,8 @@ public class EntityMap {
     public int getHeight() {
         return height;
     }
-    public Point getPointOfEntity(Entity entity){
+
+    public Point getPointOfEntity(Entity entity) {
         for (Map.Entry<Point, Entity> entry : map.entrySet()) {
             if (entry.getValue().equals(entity))
                 return entry.getKey();
@@ -40,8 +37,8 @@ public class EntityMap {
         return null;
     }
 
-    public long countEntities(Class<? extends Entity> entity){
-        return map.values().stream().filter(x->x.getClass()==entity).count();
+    public long countEntities(Class<? extends Entity> entity) {
+        return map.values().stream().filter(x -> x.getClass() == entity).count();
     }
 
     public int getSize() {
@@ -66,5 +63,18 @@ public class EntityMap {
         return neighbours;
     }
 
+    public List<Entity> getEntities(){
+        return map.values().stream().toList();
+    }
+
+    public void add(Point point, Entity entity){
+        map.put(point, entity);
+    }
+    public void remove(Point point){
+        map.remove(point);
+    }
+    public Entity get(Point point){
+        return map.get(point);
+    }
 
 }

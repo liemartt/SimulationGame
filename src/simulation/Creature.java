@@ -12,8 +12,8 @@ public abstract class Creature extends Entity {
         List<Point> path = pathFinder.findPath(map, map.getPointOfEntity(this), target);
         if(path!=null){
             Point newPoint = path.get(1);
-            map.getMap().remove(map.getPointOfEntity(this));
-            map.getMap().put(newPoint, this);
+            map.remove(map.getPointOfEntity(this));
+            map.add(newPoint, this);
         }
     };
 

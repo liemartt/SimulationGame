@@ -20,10 +20,10 @@ public class Herbivore extends Creature {
     private boolean canEatGrass(EntityMap map) {
         if(map.getPointOfEntity(this)==null) return false;
         for(Point point:map.getNeighboursOfPoint(map.getPointOfEntity(this))){
-            if(map.getMap().get(point) instanceof Grass){
+            if(map.get(point) instanceof Grass){
                 hp++;
-                map.getMap().remove(map.getPointOfEntity(this));
-                map.getMap().put(point, this);
+                map.remove(map.getPointOfEntity(this));
+                map.add(point, this);
 
                 return true;
             }

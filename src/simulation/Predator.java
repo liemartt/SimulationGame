@@ -17,9 +17,9 @@ public class Predator extends Creature {
 
     private boolean canAttack(EntityMap map) {
         for (Point point : map.getNeighboursOfPoint(map.getPointOfEntity(this))) {
-            if (map.getMap().get(point) instanceof Herbivore) {
-                map.getMap().remove(map.getPointOfEntity(this));
-                map.getMap().put(point, this);
+            if (map.get(point) instanceof Herbivore) {
+                map.remove(map.getPointOfEntity(this));
+                map.add(point, this);
                 return true;
             }
         }

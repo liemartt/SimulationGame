@@ -1,7 +1,8 @@
 package simulation;
 
 public class Predator extends Creature {
-    private int attackPower;
+
+    private final int attackPower = 10;
 
 
     public int getAttackPower() {
@@ -17,9 +18,13 @@ public class Predator extends Creature {
 
     private boolean canAttack(EntityMap map) {
         for (Point point : map.getNeighboursOfPoint(map.getPointOfEntity(this))) {
-            if (map.get(point) instanceof Herbivore) {
-                map.remove(map.getPointOfEntity(this));
-                map.add(point, this);
+            Entity neighbour = map.get(point);
+            if (neighbour instanceof Herbivore) {
+                ((Herbivore) neighbour).setHp(((Herbivore) neighbour).getHp() - attackPower);
+                if (((Herbivore) neighbour).getHp() <= 0) {
+                    map.remove(map.getPointOfEntity(this));
+                    map.add(point, this);
+                }
                 return true;
             }
         }

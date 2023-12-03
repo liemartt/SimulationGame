@@ -3,9 +3,9 @@ package simulation;
 import java.util.Scanner;
 
 public class Renderer {
-    private Scanner scanner;
-    private Simulation simulation;
-    private EntityMap map;
+    private final Scanner scanner;
+    private final Simulation simulation;
+    private final EntityMap map;
 
     public Renderer(Simulation simulation) {
         scanner = new Scanner(System.in);
@@ -45,6 +45,7 @@ public class Renderer {
                     drawMap();
                 }
                 case 3 -> {
+                    clearConsole();
                     System.out.println("Bye-Bye");
                     System.exit(1);
                 }

@@ -1,4 +1,6 @@
-package simulation;
+package simulation.entities;
+
+import simulation.EntityMap;
 
 public class Rock extends Entity{
 

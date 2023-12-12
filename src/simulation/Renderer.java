@@ -1,15 +1,14 @@
 package simulation;
 
+import simulation.entities.Entity;
+
 import java.util.Scanner;
 
 public class Renderer {
-    private final Scanner scanner;
-    private final Simulation simulation;
     private final EntityMap map;
 
     public Renderer(Simulation simulation) {
-        scanner = new Scanner(System.in);
-        this.simulation = simulation;
+        Scanner scanner = new Scanner(System.in);
         map = simulation.map;
     }
 
@@ -20,36 +19,14 @@ public class Renderer {
                 Point p = new Point(j, i);
                 Entity entity = map.get(p);
                 if (entity == null) System.out.print("\uD83D\uDFEB");//🟫
-                else System.out.print(entity.toString());
+                else System.out.print(entity);
             }
             System.out.println();
         }
     }
 
-    private void clearConsole() {
+    public void clearConsole() {
         System.out.print("\033[H\033[J");
         System.out.flush();
-    }
-
-    public void start() {
-        while (true) {
-            System.out.println("Choose action : 1.Make a step 2.Pause simulation 3.Stop simulation");
-            int choise = scanner.nextInt();
-            switch (choise) {
-                case 1 -> {
-                    simulation.nextTurn();
-                    drawMap();
-                }
-                case 2 -> {
-                    simulation.pauseSimulation();
-                    drawMap();
-                }
-                case 3 -> {
-                    clearConsole();
-                    System.out.println("Bye-Bye");
-                    System.exit(1);
-                }
-            }
-        }
     }
 }

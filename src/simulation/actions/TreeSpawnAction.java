@@ -1,9 +1,7 @@
 package simulation.actions;
 
 import simulation.EntityMap;
-import simulation.Point;
-import simulation.Rock;
-import simulation.Tree;
+import simulation.entities.Tree;
 
 public class TreeSpawnAction extends SpawnEntityAction<Tree> {
     public TreeSpawnAction() {

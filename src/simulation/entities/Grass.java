@@ -1,4 +1,6 @@
-package simulation;
+package simulation.entities;
+
+import simulation.EntityMap;
 
 public class Grass extends Entity{
     public Grass(EntityMap map) {

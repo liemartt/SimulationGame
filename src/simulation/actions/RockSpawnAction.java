@@ -1,6 +1,7 @@
 package simulation.actions;
 
 import simulation.*;
+import simulation.entities.Rock;
 
 public class RockSpawnAction extends SpawnEntityAction<Rock> {
     public RockSpawnAction() {

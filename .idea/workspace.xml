@@ -10,18 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b6ab7d9-1b04-4922-a236-2023f7534500" name="Changes" comment="first working version with emoji output in console">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simulation/actions/CheckHerbivoresAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Herbivore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Predator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/EntityMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/EntityMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Grass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Herbivore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Herbivore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/PathFinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/PathFinding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Predator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Predator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulation/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Rock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/entities/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/GrassSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/GrassSpawnAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/HerbivoreSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/HerbivoreSpawnAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/MakeMovesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/MakeMovesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/MissingGrassSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/MissingGrassSpawnAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/PredatorSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/PredatorSpawnAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/RockSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/RockSpawnAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/SpawnEntityAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/SpawnEntityAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/actions/TreeSpawnAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/actions/TreeSpawnAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +63,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -54,25 +76,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="simulation.Main" />
@@ -100,7 +123,9 @@
       <option name="presentableId" value="Default" />
       <updated>1701596170415</updated>
       <workItem from="1701596171632" duration="661000" />
-      <workItem from="1701600201089" duration="3328000" />
+      <workItem from="1701600201089" duration="8473000" />
+      <workItem from="1701777569451" duration="15000" />
+      <workItem from="1702373292378" duration="2122000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 package simulation.actions;
 
 import simulation.EntityMap;
-import simulation.Grass;
+import simulation.entities.Grass;
 import simulation.Point;
 
 public class MissingGrassSpawnAction extends SpawnEntityAction<Grass> {
@@ -11,7 +11,6 @@ public class MissingGrassSpawnAction extends SpawnEntityAction<Grass> {
         while (((double) grassCounter / map.getSize()) < 0.1) {
             Point point = map.getRandomPoint();
             if (point == null) {
-                System.out.println("No empty points");//TODO Exception
                 return;
             }
             map.add(point, createEntity(map));

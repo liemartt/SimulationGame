@@ -1,10 +1,10 @@
 package simulation;
 
-import java.util.List;
 import java.util.Objects;
 
 public class Point {
-    private int x,y;
+    private final int x;
+    private final int y;
 
     public Point(int x, int y) {
         this.x = x;

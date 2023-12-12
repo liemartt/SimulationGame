@@ -1,4 +1,7 @@
-package simulation;
+package simulation.entities;
+
+import simulation.EntityMap;
+import simulation.Point;
 
 import java.util.List;
 

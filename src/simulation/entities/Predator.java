@@ -1,4 +1,7 @@
-package simulation;
+package simulation.entities;
+
+import simulation.EntityMap;
+import simulation.Point;
 
 public class Predator extends Creature {
 

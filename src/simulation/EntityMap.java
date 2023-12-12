@@ -1,9 +1,10 @@
 package simulation;
 
+import simulation.entities.Entity;
+
 import java.util.*;
 
 public class EntityMap {
-    //TODO private map without getMap
     private Map<Point, Entity> map;
     private final int width = 20;
     private final int height = 10;
@@ -63,17 +64,19 @@ public class EntityMap {
         return neighbours;
     }
 
-    public List<Entity> getEntities(){
+    public List<Entity> getEntities() {
         return map.values().stream().toList();
     }
 
-    public void add(Point point, Entity entity){
+    public void add(Point point, Entity entity) {
         map.put(point, entity);
     }
-    public void remove(Point point){
+
+    public void remove(Point point) {
         map.remove(point);
     }
-    public Entity get(Point point){
+
+    public Entity get(Point point) {
         return map.get(point);
     }
 

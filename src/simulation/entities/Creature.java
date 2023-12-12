@@ -1,12 +1,14 @@
-package simulation;
+package simulation.entities;
 
-import simulation.actions.MakeMovesAction;
+import simulation.EntityMap;
+import simulation.PathFinding;
+import simulation.Point;
 
 import java.util.List;
 
 public abstract class Creature extends Entity {
-    protected PathFinding pathFinder = new PathFinding();
-    protected int speed = 3;
+    protected final PathFinding pathFinder = new PathFinding();
+    private final int speed = 3;
     protected int hp = 30;
 
     public abstract void makeMove(EntityMap map);
@@ -18,10 +20,6 @@ public abstract class Creature extends Entity {
             map.remove(map.getPointOfEntity(this));
             map.add(newPoint, this);
         }
-    }
-
-    public int getSpeed() {
-        return speed;
     }
 
     public int getHp() {

@@ -1,6 +1,6 @@
 package simulation.actions;
 
-import simulation.Entity;
+import simulation.entities.Entity;
 import simulation.EntityMap;
 import simulation.Point;
 
@@ -14,7 +14,6 @@ public abstract class SpawnEntityAction<T extends Entity> extends Action {
         while (rate <= spawnRate) {
             Point point = map.getRandomPoint();
             if (point == null) {
-                System.out.println("No empty points");//TODO Exception
                 return;
             }
             map.add(point, createEntity(map));

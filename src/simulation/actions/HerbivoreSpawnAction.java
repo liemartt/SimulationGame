@@ -1,7 +1,7 @@
 package simulation.actions;
 
 import simulation.EntityMap;
-import simulation.Herbivore;
+import simulation.entities.Herbivore;
 
 public class HerbivoreSpawnAction extends SpawnEntityAction<Herbivore> {
     public HerbivoreSpawnAction() {

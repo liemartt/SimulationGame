@@ -1,5 +1,7 @@
 package simulation;
 
+import simulation.entities.Entity;
+
 import java.util.*;
 
 public class PathFinding {

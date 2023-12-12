@@ -1,7 +1,7 @@
 package simulation.actions;
 
 import simulation.EntityMap;
-import simulation.Predator;
+import simulation.entities.Predator;
 
 public class PredatorSpawnAction extends SpawnEntityAction<Predator> {
     public PredatorSpawnAction() {
